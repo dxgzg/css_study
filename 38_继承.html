@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            color: red;
+        }
+        /*
+            背景相关、布局相关等相关的都不会被继承
+
+        */
+        div{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<p>
+    i am p
+    <!--  样式会被继承的，子继承父的  -->
+    <span> i am p span </span>
+</p>
+
+<div>
+    i am div
+    <span>
+        i am div span
+    </span>
+</div>
+</body>
+</html>

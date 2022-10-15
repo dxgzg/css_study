@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .s1 {
+            background-color: yellow;
+
+            /*
+                行内元素：
+                    width和height是没有用的
+                    可以设置padding，不会影响其他元素垂直布局，垂直是重点
+                    但是top是不会设置的，只会有bottom的
+                    border同上
+            */
+            width: 100px;
+            height: 100px;
+            margin-left: 200px;
+            /*padding: 100px;*/
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+        }
+
+        /*
+            a标签也是行内元素
+        */
+        a {
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+
+
+            /*
+                display设置显示的类型
+                    inline 转为行内元素
+                    block   转为块元素
+                    inline-block 转换行内块元素，
+                        支持高度和宽度，同时元素都放在一行
+                    none就是元素消失
+
+            */
+            display: block;
+
+            /*
+                visibility:
+                    visible 默认值，元素在页面中正常显示,会占用位置
+
+            */
+
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+<a href="#javascript">
+    aaa
+</a>
+
+<span class="s1">
+        i am span
+    </span>
+
+<div class="box1">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color: yellowgreen;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .parent{
+            color: skyblue;
+        }
+        /*
+          样式一样冲突优先级按下列来
+              内联样式
+              id选择器
+              类和伪类选择器
+              元素选择器
+
+          同级class，按照css位置来，可以理解为覆盖写
+        */
+    </style>
+</head>
+<body>
+<div class="parent">
+    parent div!
+    <div id="box1" class="red" style="color: blue">
+        我是div
+
+    </div>
+</div>
+</body>
+</html>

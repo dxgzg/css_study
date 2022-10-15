@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*首字母*/
+        .p1::first-letter{
+            font-size: 50px;
+        }
+        /*行*/
+        p::first-line{
+            color: red;
+        }
+        /*选中的行*/
+        p::selection{
+            color: #535bf2;
+        }
+
+        /*开始的头*/
+        p::before{
+            content: "hello p before!";
+            color: black;
+        }
+        /*结束的尾巴*/
+        p:after{
+          content: "hello p end!";
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+  <p class="p1">
+    Hello dxgzg!
+  </p>
+</body>
+</html>
